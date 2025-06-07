@@ -28,6 +28,7 @@ int main() {
 	ssize_t n;
 
     do {
+        //prints the menu
         printMenu();
         if (scanf("%d", &choice) != 1) {
             fprintf(stderr, "Invalid input\n");
@@ -36,12 +37,15 @@ int main() {
         getchar();
 
         switch (choice) {
+        //creates file with introduction
         case 1:
             fd = fileCreate(INTRO_FILE);
             break;
+        //opens the file
         case 2:
             fd = fileOpen(INTRO_FILE);
             break;
+        //writes into the file
         case 3:
             if (fd < 0) {
                 puts("File not open. Please open first.");
@@ -50,6 +54,7 @@ int main() {
                 fileWrite(fd, introText, strlen(introText));
             }
             break;
+        //reads the file
         case 4:
             if (fd < 0) {
                 puts("File not open. Please open first.");
@@ -60,15 +65,18 @@ int main() {
                 printf("\n--- File Contents ---\n%s\n", buf);
             }
             break;
+        //closes the file
         case 5:
             if (fd >= 0) {
                 fileClose(fd);
                 fd = -1;
             }
             break;
+        //deletes the file
         case 6:
             fileDelete(INTRO_FILE);
             break;
+        //exits
         case 0:
             break;
         default:
