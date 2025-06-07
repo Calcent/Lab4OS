@@ -4,46 +4,44 @@
 #include <string.h>
 #include <errno.h>
 
-//creates the file
 int fileCreate(const char* filename) {
-	int handle = TFS_create(filename);
-	if (handle < 0) {
-		fprintf(stderr, "fileCreate(%s) failed: %s\n", filename, TFS_strerror(errno));
-	}
-	return handle;
+    int h = TFS_create(filename);
+    if (h < 0)
+        fprintf(stderr, "fileCreate(%s) failed: %s\n", filename, strerror(errno));
+    return h;
 }
 
-//opens file
 int fileOpen(const char* filename) {
-	int handle = TFS_open(filename);
-	if (handle < 0) {
-		fprint(stderr, "fileOpen(%s) failed: %s\n", filename, TFS_strerror(errno));
-	}
-	return handle;
+    int h = TFS_open(filename);
+    if (h < 0)
+        fprintf(stderr, "fileOpen(%s) failed: %s\n", filename, strerror(errno));
+    return h;
 }
 
-//reads file
-ssize_t fileRead(int fd, void* buf, size_t count) {
-	ssize_t n = TFS_read(fd, buf, count);
-	if (n < 0) {
-		fprintf(stderr, "fileRead(fd=%d) failed: %s\n", fd, TFS_strerror(errno));
-	}
-	return n;
+ssize_t fileRead(int fd, void* buf, size_t cnt) {
+    ssize_t n = TFS_read(fd, buf, cnt);
+    if (n < 0)
+        fprintf(stderr, "fileRead(fd=%d) failed: %s\n", fd, strerror(errno));
+    return n;
+}
+
+ssize_t fileWrite(int fd, const void* buf, size_t cnt) {
+    ssize_t n = TFS_write(fd, buf, cnt);
+    if (n < 0)
+        fprintf(stderr, "fileWrite(fd=%d) failed: %s\n", fd, strerror(errno));
+    return n;
 }
 
 int fileClose(int fd) {
-	int rc = TFS_close(fd);
-	if (rc < 0) {
-		fprintf(stderr, "fileClose(fd=%d) failed: %s\n", fd, TFS_strerror(errno));
-	}
-	return rc;
+    int rc = TFS_close(fd);
+    if (rc < 0)
+        fprintf(stderr, "fileClose(fd=%d) failed: %s\n", fd, strerror(errno));
+    return rc;
 }
 
 int fileDelete(const char* filename) {
-	int rc = TFS_delete(filename);
-	if (rc < 0) {
-		fprintf(stderr, "fileDelete(%s) failed: %s\n", filename, TFS_strerror(errno));
-	}
-	return rc;
+    int rc = TFS_delete(filename);
+    if (rc < 0)
+        fprintf(stderr, "fileDelete(%s) failed: %s\n", filename, strerror(errno));
+    return rc;
 }
-

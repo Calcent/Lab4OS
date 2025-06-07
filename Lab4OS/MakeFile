@@ -1,20 +1,21 @@
 CC      = gcc
 CFLAGS  = -Wall -g -I.
-LDLIBS  = -lTerminal    # if you link against a Terminal library
-
 TARGETS = Isaac_testFS
 
 .PHONY: all clean
 
 all: $(TARGETS)
 
-Isaac_testFS: Isaac_libFS.o Isaac_testFS.o
-	$(CC) $(CFLAGS) -o $@ $^ $(LDLIBS)
+Isaac_testFS: Isaac_libFS.o Isaac_testFS.o Terminal.o
+	$(CC) $(CFLAGS) -o $@ $^
 
 Isaac_libFS.o: Isaac_libFS.c Isaac_libFS.h Terminal.h
 	$(CC) $(CFLAGS) -c $<
 
 Isaac_testFS.o: Isaac_testFS.c Isaac_libFS.h
+	$(CC) $(CFLAGS) -c $<
+
+Terminal.o: Terminal.c Terminal.h
 	$(CC) $(CFLAGS) -c $<
 
 clean:
