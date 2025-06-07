@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Calcent\\OneDrive\\Documents\\Lab4OS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Calcent\\OneDrive\\Documents\\Lab4OS\\Lab4OS\\testFS.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Lab4OS\\testFS.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Calcent\\OneDrive\\Documents\\Lab4OS\\Lab4OS\\libFS.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Lab4OS\\libFS.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Calcent\\OneDrive\\Documents\\Lab4OS\\Lab4OS\\libFS.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Lab4OS\\libFS.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Calcent\\OneDrive\\Documents\\Lab4OS\\Lab4OS\\testFS.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Lab4OS\\testFS.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Calcent\\OneDrive\\Documents\\Lab4OS\\Lab4OS\\MakeFile||{3B902123-F8A7-4915-9F01-361F908088D0}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -42,32 +42,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "testFS.c",
               "DocumentMoniker": "C:\\Users\\Calcent\\OneDrive\\Documents\\Lab4OS\\Lab4OS\\testFS.c",
               "RelativeDocumentMoniker": "Lab4OS\\testFS.c",
               "ToolTip": "C:\\Users\\Calcent\\OneDrive\\Documents\\Lab4OS\\Lab4OS\\testFS.c",
               "RelativeToolTip": "Lab4OS\\testFS.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-06-07T02:53:19.483Z"
+              "WhenOpened": "2025-06-07T02:53:19.483Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "libFS.c",
               "DocumentMoniker": "C:\\Users\\Calcent\\OneDrive\\Documents\\Lab4OS\\Lab4OS\\libFS.c",
               "RelativeDocumentMoniker": "Lab4OS\\libFS.c",
               "ToolTip": "C:\\Users\\Calcent\\OneDrive\\Documents\\Lab4OS\\Lab4OS\\libFS.c",
               "RelativeToolTip": "Lab4OS\\libFS.c",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-06-07T02:53:05.616Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "libFS.h",
               "DocumentMoniker": "C:\\Users\\Calcent\\OneDrive\\Documents\\Lab4OS\\Lab4OS\\libFS.h",
               "RelativeDocumentMoniker": "Lab4OS\\libFS.h",
