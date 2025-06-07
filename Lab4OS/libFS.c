@@ -31,3 +31,19 @@ ssize_t fileRead(int fd, void* buf, size_t count) {
 	return n;
 }
 
+int fileClose(int fd) {
+	int rc = TFS_close(fd);
+	if (rc < 0) {
+		fprintf(stderr, "fileClose(fd=%d) failed: %s\n", fd, TFS_strerror(errno));
+	}
+	return rc;
+}
+
+int fileDelete(const char* filename) {
+	int rc = TFS_delete(filename);
+	if (rc < 0) {
+		fprintf(stderr, "fileDelete(%s) failed: %s\n", filename, TFS_strerror(errno));
+	}
+	return rc;
+}
+
