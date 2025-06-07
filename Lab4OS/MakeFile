@@ -1,0 +1,18 @@
+CC     = gcc
+CFLAGS = -Wall -g
+TARGET = testFS
+LDLIBS = -lTerminal 
+
+all: $(TARGET)
+
+$(TARGET): libFS.o testFS.o
+	$(CC) $(CFLAGS) -o $@ $^ $(LDLIBS)
+
+libFS.o: libFS.c libFS.h
+	$(CC) $(CFLAGS) -c $<
+
+testFS.o: testFS.c libFS.h
+	$(CC) $(CFLAGS) -c $<
+
+clean:
+	rm -f *.o $(TARGET)
