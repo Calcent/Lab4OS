@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Calcent\\OneDrive\\Documents\\Lab4OS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Calcent\\OneDrive\\Documents\\Lab4OS\\Lab4OS\\Isaac_testFS.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Lab4OS\\Isaac_testFS.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Calcent\\OneDrive\\Documents\\Lab4OS\\Lab4OS\\Isaac_libFS.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Lab4OS\\Isaac_libFS.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Calcent\\OneDrive\\Documents\\Lab4OS\\Lab4OS\\Isaac_libFS.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Lab4OS\\Isaac_libFS.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Calcent\\OneDrive\\Documents\\Lab4OS\\Lab4OS\\Isaac_testFS.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Lab4OS\\Isaac_testFS.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MakeFile",
               "DocumentMoniker": "C:\\Users\\Calcent\\OneDrive\\Documents\\Lab4OS\\Lab4OS\\MakeFile",
               "RelativeDocumentMoniker": "Lab4OS\\MakeFile",
@@ -38,25 +38,24 @@
               "RelativeToolTip": "Lab4OS\\MakeFile",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-06-07T02:53:36.27Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T02:53:36.27Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Isaac_testFS.c",
               "DocumentMoniker": "C:\\Users\\Calcent\\OneDrive\\Documents\\Lab4OS\\Lab4OS\\Isaac_testFS.c",
               "RelativeDocumentMoniker": "Lab4OS\\Isaac_testFS.c",
               "ToolTip": "C:\\Users\\Calcent\\OneDrive\\Documents\\Lab4OS\\Lab4OS\\Isaac_testFS.c",
               "RelativeToolTip": "Lab4OS\\Isaac_testFS.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAACMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-06-07T02:53:19.483Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Isaac_libFS.c",
               "DocumentMoniker": "C:\\Users\\Calcent\\OneDrive\\Documents\\Lab4OS\\Lab4OS\\Isaac_libFS.c",
               "RelativeDocumentMoniker": "Lab4OS\\Isaac_libFS.c",
@@ -64,12 +63,11 @@
               "RelativeToolTip": "Lab4OS\\Isaac_libFS.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-06-07T02:53:05.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T02:53:05.616Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Isaac_libFS.h",
               "DocumentMoniker": "C:\\Users\\Calcent\\OneDrive\\Documents\\Lab4OS\\Lab4OS\\Isaac_libFS.h",
               "RelativeDocumentMoniker": "Lab4OS\\Isaac_libFS.h",
