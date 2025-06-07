@@ -1,10 +1,11 @@
 #include "Isaac_libFS.h"
-#include <stdio.h>      // fprintf()
-#include <string.h>     // strerror()
-#include <errno.h>      // errno
-#include <fcntl.h>      // open() flags
-#include <unistd.h>     // read(), write(), close(), unlink()
+#include <stdio.h> 
+#include <string.h>  
+#include <errno.h> 
+#include <fcntl.h>
+#include <unistd.h>
 
+//creates file
 int fileCreate(const char* filename) {
     int fd = open(filename, O_CREAT | O_RDWR, 0666);
     if (fd < 0) {
@@ -14,6 +15,7 @@ int fileCreate(const char* filename) {
     return fd;
 }
 
+//opens file
 int fileOpen(const char* filename) {
     int fd = open(filename, O_RDWR);
     if (fd < 0) {
@@ -23,6 +25,7 @@ int fileOpen(const char* filename) {
     return fd;
 }
 
+//reads file
 ssize_t fileRead(int fd, void* buf, size_t count) {
     ssize_t n = read(fd, buf, count);
     if (n < 0) {
@@ -32,6 +35,7 @@ ssize_t fileRead(int fd, void* buf, size_t count) {
     return n;
 }
 
+//writes in the file
 ssize_t fileWrite(int fd, const void* buf, size_t count) {
     ssize_t n = write(fd, buf, count);
     if (n < 0) {
@@ -41,6 +45,7 @@ ssize_t fileWrite(int fd, const void* buf, size_t count) {
     return n;
 }
 
+//closes the file
 int fileClose(int fd) {
     int rc = close(fd);
     if (rc < 0) {
@@ -50,6 +55,7 @@ int fileClose(int fd) {
     return rc;
 }
 
+//deletes file
 int fileDelete(const char* filename) {
     int rc = unlink(filename);
     if (rc < 0) {
